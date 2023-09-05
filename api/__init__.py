@@ -27,7 +27,6 @@ def calcular_mediana(df, columnas_edaficas):
         df[columnas] = pd.to_numeric(df[columnas], errors='coerce')
         medianas[columnas] = df[columnas].median()
 
-    # Mapear nombres de columnas a nombres más legibles
     mapeo_nombres = {
         'ph_agua_suelo_2_5_1_0': 'PH',
         'f_sforo_p_bray_ii_mg_kg': 'Fosforo',
