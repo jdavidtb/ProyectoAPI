@@ -38,7 +38,6 @@ def calcular_mediana(df, columnas_edaficas):
         'potasio_k_intercambiable_cmol_kg': 'Potasio'
     }
 
-    medianas_legibles = {mapeo_nombres.get(nombre_columna, nombre_columna): 
-                        valor_mediana for nombre_columna, valor_mediana in medianas.items()}
+    medianas_legibles = {mapeo_nombres.get(nombre_columna):  valor_mediana for nombre_columna, valor_mediana in medianas.items()}
 
     return medianas_legibles
