@@ -18,11 +18,7 @@ def consultar(departamento, municipio, cultivo, limit):
 
     results_df = pd.DataFrame.from_records(results)
 
-    for columna in ['ph_agua_suelo_2_5_1_0', 'f_sforo_p_bray_ii_mg_kg', 'potasio_k_intercambiable_cmol_kg']:
-        if columna in results_df.columns:
-            results_df[columna] = pd.to_numeric(results_df[columna], errors='coerce')
-
-    return results_df
+  
 
 
 def calcular_mediana(df, columnas_edaficas):
