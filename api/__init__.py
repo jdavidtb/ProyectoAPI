@@ -1,7 +1,6 @@
 from sodapy import Socrata
 import pandas as pd
 
-
 def conexion_da():
     client = Socrata("www.datos.gov.co", None)
     return client
@@ -17,6 +16,10 @@ def consultar(departamento, municipio, cultivo, limit):
         return None
 
     results_df = pd.DataFrame.from_records(results)
+    
+    return results_df
+
+
 
   
 
