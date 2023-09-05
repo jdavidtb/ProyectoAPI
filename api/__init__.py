@@ -20,10 +20,6 @@ def consultar(departamento, municipio, cultivo, limit):
     return results_df
 
 
-
-  
-
-
 def calcular_mediana(df, columnas_edaficas):
     medianas = {}
     for columnas in columnas_edaficas:
